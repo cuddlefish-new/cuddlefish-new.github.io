@@ -4,7 +4,38 @@
 @import "objects/*";
 @import "widgets/*";
 
-.header--big {
-	color: pink;
+/* Pattern Library Homepage CSS */
+
+body {
+  -webkit-font-smoothing: antialiased;
 }
 
+.grid {
+  max-width: 1500px;
+  min-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.jumbotron {
+  background: #333;
+  min-height: 400px;
+}
+
+.header--big {
+  padding-top: 160px;
+
+  font-family: Helvetica, Arial;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: -.02em;
+  text-align: center;
+  color: #fff;
+
+  background: 0 0;
+  background: -webkit-linear-gradient(-45deg,rgba(255,255,255,.9) 0,rgba(255,255,255,.01) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

@@ -446,20 +446,20 @@ body {
 
 /* line 20, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
 .jumbotron {
-  background: #333;
+  border-bottom: 1px solid #eaeaea;
   min-height: 400px; }
 
 /* line 25, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
 .header--big {
   padding-top: 160px;
-  font-family: Helvetica, Arial;
-  font-size: 70px;
-  font-weight: bold;
-  letter-spacing: -.02em;
+  font-family: "Open Sans", Arial;
+  font-size: 34px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
   background: 0 0;
-  background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.9) 0, rgba(255, 255, 255, 0.01) 100%);
+  background: -webkit-linear-gradient(-45deg, #24C6DC 0, #514A9D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -9,32 +9,111 @@
   display: block;
   background-color: #f3f3f3; }
 
-/* line 4, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+/* ASIN Image */
+/* line 7, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+.product__image {
+  width: 10%;
+  padding-bottom: 10px;
+  text-align: left; }
+
+/* ASIN Link */
+/* line 14, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+.product__link {
+  font-family: Arial;
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #333;
+  text-decoration: none; }
+
+/* line 23, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+.product__link:active {
+  color: #333; }
+
+/* line 27, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+.product__link:visited {
+  color: #333; }
+
+/* line 31, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+.list__price {
+  font-family: Arial;
+  font-size: 11px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: line-through; }
+
+/* line 39, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+.red__price {
+  font-family: Arial;
+  font-size: 13px; }
+
+/* Review Stars */
+/* line 45, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+.reviews {
+  clear: both;
+  overflow: hidden;
+  margin-top: 20000px; }
+
+/* line 51, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+.reviews__container {
+  vertical-align: middle; }
+
+/* line 55, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+.reviews__stars {
+  display: inline-block;
+  width: 80px;
+  height: 18px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-position: -175px -368px;
+  background-image: url("../../images/aui-sprite.png");
+  background-repeat: no-repeat;
+  background-size: 400px 650px; }
+
+/* line 67, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+.reviews__star__number {
+  display: inline-block;
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 18px; }
+
+/* line 74, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+.reviews__star__number:active {
+  box-sizing: border-box;
+  color: #0066c0;
+  font-size: 13px; }
+
+/* line 80, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+.reviews__star__number:visited {
+  color: #0066c0; }
+
+/* Narwhal's */
+/* line 86, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
 .price-block__container {
   margin: 10px; }
 
-/* line 8, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+/* line 90, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
 .image--placeholder {
   width: 170px;
   height: 150px;
   display: block;
   background-color: #f3f3f3; }
 
-/* line 16, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+/* line 98, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
 .price-block__title {
   padding-bottom: a-desktop-spacing-micro;
   font-size: a-desktop-size-small;
   line-height: 1.25;
   color: #004B91; }
 
-/* line 24, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+/* line 107, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
 .price-block__price--list {
   display: inline-block;
   text-decoration: line-through;
   font-size: a-desktop-size-mini;
   color: #bbb; }
 
-/* line 33, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+/* line 116, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
 .price-block__price--buy {
   display: inline-block;
   font: a-desktop-size-base;
@@ -42,7 +121,7 @@
   text-decoration: none;
   color: #b12704; }
 
-/* line 43, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+/* line 126, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
 .price-block__button--add-to-cart {
   width: 115px;
   height: 30px;
@@ -57,7 +136,7 @@
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
   border-radius: 3px; }
 
-/* line 60, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+/* line 143, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
 .icon--prime {
   margin-bottom: a-desktop-spacing-micro;
   width: 52px;
@@ -67,7 +146,7 @@
   background-position: -5px -489px;
   background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/amazonui/sprites/aui_sprite_0037-1x._V1_.png%22"); }
 
-/* line 72, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+/* line 155, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
 .icon--stars {
   width: 80px;
   height: 16px;
@@ -76,7 +155,7 @@
   background-position: -175px -368px;
   background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/amazonui/sprites/aui_sprite_0037-1x._V1_.png%22"); }
 
-/* line 83, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
+/* line 166, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/price-block.scss */
 .stock--availability {
   display: block;
   font-size: 11px;
@@ -353,3 +432,35 @@
     width: 0%; }
   100% {
     width: 100%; } }
+/* Pattern Library Homepage CSS */
+/* line 9, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
+body {
+  -webkit-font-smoothing: antialiased; }
+
+/* line 13, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
+.grid {
+  max-width: 1500px;
+  min-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+/* line 20, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
+.jumbotron {
+  background: #333;
+  min-height: 400px; }
+
+/* line 25, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
+.header--big {
+  padding-top: 160px;
+  font-family: Helvetica, Arial;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: -.02em;
+  text-align: center;
+  color: #fff;
+  background: 0 0;
+  background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.9) 0, rgba(255, 255, 255, 0.01) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent; }

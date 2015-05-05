@@ -1,0 +1,24 @@
+/* line 3, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-card.scss */
+.tupperware {
+  width: 220px;
+  margin: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-radius: 3px; }
+
+/* line 13, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-card.scss */
+.tupperware__image--placeholder {
+  width: 120px;
+  height: 170px;
+  padding: 20px;
+  color: #fff; }
+
+/* line 21, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-card.scss */
+.tupperware__inside--grey {
+  height: 130px;
+  width: 220px;
+  border-top-color: #e0e0e0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  background-color: #f3f3f3; }

@@ -55,9 +55,9 @@ set :images_dir, 'images'
 
 activate :bh
 
-activate :imageoptim
-
 activate :bourbon
+
+activate :syntax
 
 # Build-specific configuration
 configure :build do
@@ -75,6 +75,16 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+helpers do
+  def code_example(input)
+    source = input
+    formatter = Rouge::Formatters::HTML.new(css_class: 'highlight')
+    lexer = Rouge::Lexers::Shell.new
+    output = formatter.format(lexer.lex(source))
+    "<div class='sc-demo'><div class='sc-demo__output'>#{input.to_s}</div><div class='sc-demo__input'>#{output}</div></div>"
+  end
 end
 
 activate :deploy do |deploy|

@@ -9,16 +9,19 @@
   <title><%= current_page.data.title || "Cuddlefish" %></title>
   
   <!-- Use title if it's in the page YAML frontmatter -->
-  <title><%= current_page.data.title || "The Middleman" %></title>
-
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+
+  <!-- JQuery Link -->
+  <%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' %>
+
+  <!-- Stylesheets & JS -->
   <%= stylesheet_link_tag "all" %>
   <%= javascript_include_tag  "all" %>
+
 </head>
 <body class="<%= page_classes %>">
   <%= yield %>
 
-  <%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' %>
   <%= javascript_include_tag bootstrap_js %>
 </body>
 </html>

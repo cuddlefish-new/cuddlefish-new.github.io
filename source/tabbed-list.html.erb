@@ -1,17 +1,67 @@
 ---
-title: Super Fun Times
+title: Tabbed List Widget Exploration
 ---
-
-<body>
-  <div class="grid">
+<body> 
+  <div class="grid grid__main">
     <div class="grid__col grid__col--1-of-3">
      <div class="left-nav">
        
      </div>
     </div>  
-    <div class="grid__col grid__col--2-of-3 grid__col--centered">
+    <div class="grid__col grid__col--2-of-3">
      <div class="tabbed-list">
-       
+
+      <!-- Tab JS -->
+      <script type="text/javascript" />
+        $('.tabs').tabslet();
+      </script>
+
+      <div class='tabs tabs_default'>
+        <ul class='horizontal'>
+          <li><a href="#tab-1">Best Sellers</a></li>
+          <li><a href="#tab-2">Indie Titles</a></li>
+          <li><a href="#tab-3">PC Best Sellers</a></li>
+        </ul>
+
+        <div id='tab-1' class="tabbed_content">
+          <span>
+            <div class="grid">
+              <div class="grid__col grid__col--1-of-4">
+               <div class="tabbed-list__thumbnail tabbed-list__thumbnail--first">
+                <a href="#">
+                  <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
+                </a>
+               </div>
+              </div>
+
+              <div class="grid__col grid__col--1-of-4">
+               <div class="tabbed-list__thumbnail">
+                <a href="#">
+                  <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
+                </a>
+               </div>
+              </div>
+              <div class="grid__col grid__col--1-of-4">
+               <div class="tabbed-list__thumbnail">
+                <a href="#">
+                  <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
+                </a>
+               </div>
+              </div>
+
+              <div class="grid__col grid__col--1-of-4">
+                <div class="tabbed-list__thumbnail">
+                  <a href="#">
+                    <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
+                  </a>
+               </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div id='tab-2' class="tabbed_content"><span>Tab 2</span></div>
+        <div id='tab-3' class="tabbed_content"><span>Tab 3</span></div>
+      </div>
      </div>
     </div>
   </div>

@@ -39,8 +39,9 @@
 
 .tabbed-list__thumbnail {
   padding: 30px 0;
-  @include clearfix;
-  @include box-sizing(border-box);
+  clear: both;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
   border-radius: 3px;
 
   &:hover {

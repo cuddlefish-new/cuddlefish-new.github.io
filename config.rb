@@ -55,8 +55,6 @@ set :images_dir, 'images'
 
 activate :bh
 
-activate :imageoptim
-
 activate :bourbon
 
 # Build-specific configuration

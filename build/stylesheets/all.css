@@ -432,24 +432,99 @@
     width: 0%; }
   100% {
     width: 100%; } }
+/* line 1, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.tabs {
+  margin-top: 60px;
+  font-size: 14px;
+  line-height: 1.25; }
+  /* line 6, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+  .tabs .horizontal {
+    border-bottom: 1px solid #eaeaea; }
+  /* line 10, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+  .tabs li {
+    display: inline-block;
+    padding: 13px 20px;
+    position: relative;
+    bottom: -1px;
+    font-size: 12px;
+    text-align: center; }
+    /* line 19, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+    .tabs li.active {
+      font-weight: bold;
+      background: #fff;
+      border: 1px solid #eaeaea;
+      border-bottom: none;
+      border-top: 2px solid orange; }
+    /* line 28, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+    .tabs li a:hover {
+      text-decoration: underline; }
+
+/* line 34, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.tabbed_content {
+  padding: 38px 0;
+  border: 1px solid #eaeaea;
+  border-top: none; }
+
+/* line 40, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.tabbed-list__thumbnail {
+  padding: 30px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px; }
+  /* line 20, /Users/jannhorvath/.rvm/gems/ruby-2.2.0/gems/bourbon-4.2.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .tabbed-list__thumbnail::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 46, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+  .tabbed-list__thumbnail:hover {
+    background: #fafafa; }
+
+/* line 51, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.tabbed-list__image {
+  width: 113px;
+  height: 161px;
+  margin: 0 auto;
+  display: block; }
+
+/* line 58, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.tabbed-list__thumbnail--first {
+  background: #f2f2f2; }
+  /* line 61, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+  .tabbed-list__thumbnail--first:hover {
+    background: #f2f2f2; }
+
 /* Pattern Library Homepage CSS */
 /* line 9, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
 body {
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased; }
 
-/* line 13, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
+/* line 14, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
+a {
+  text-decoration: none; }
+
+/* line 18, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
+a:visited {
+  color: #333; }
+
+/* line 22, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
 .grid {
   max-width: 1500px;
-  min-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
   overflow: hidden; }
 
-/* line 20, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
+/* line 28, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
+.grid__main {
+  min-width: 1000px; }
+
+/* line 32, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
 .jumbotron {
   border-bottom: 1px solid #eaeaea;
   min-height: 400px; }
 
-/* line 25, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
+/* line 37, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
 .header--big {
   padding-top: 160px;
   font-family: "Open Sans", Arial;
@@ -459,7 +534,7 @@ body {
   text-align: center;
   color: #fff;
   background: 0 0;
-  background: -webkit-linear-gradient(-45deg, #24C6DC 0, #514A9D 100%);
+  background: -webkit-linear-gradient(-45deg, #1D2B64 0, #F8CDDA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

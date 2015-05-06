@@ -468,30 +468,25 @@
 /* line 40, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
 .tabbed-list__thumbnail {
   padding: 30px 0;
+  clear: both;
+  overflow: hidden;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   border-radius: 3px; }
-  /* line 20, /Users/jannhorvath/.rvm/gems/ruby-2.2.0/gems/bourbon-4.2.2/app/assets/stylesheets/addons/_clearfix.scss */
-  .tabbed-list__thumbnail::after {
-    clear: both;
-    content: "";
-    display: table; }
-  /* line 46, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+  /* line 47, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
   .tabbed-list__thumbnail:hover {
     background: #fafafa; }
 
-/* line 51, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+/* line 52, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
 .tabbed-list__image {
   width: 113px;
   height: 161px;
   margin: 0 auto;
   display: block; }
 
-/* line 58, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+/* line 59, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
 .tabbed-list__thumbnail--first {
   background: #f2f2f2; }
-  /* line 61, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+  /* line 62, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
   .tabbed-list__thumbnail--first:hover {
     background: #f2f2f2; }
 

@@ -1,9 +1,13 @@
-@import "globals/variables";
+@import url("globals/variables") screen;
+@import url("normalize.css") screen;
 
+.body{
+  background-color: #fff;
+}
 
 .acs-dhsb-widget {
   min-width: 770px; 
-  margin-left: 205px; 
+  margin-left: 200px; 
   margin-top: 10px;
   padding: 5px 10px 5px 5px;
 }
@@ -43,7 +47,7 @@
   left: 50%;
   width: 215px;
   padding-top: 1px;
-  margin: 0 0 0 155px;
+  margin: 0 0 0 150px;
   list-style: none;
 
   text-align: left;
@@ -237,11 +241,10 @@
 }
 
 /* background progress bar*/
-.acs-hsb__progress-bar .progress-bar {
-  height: 63px;
-  background: #F0F0F0;
-}
+
 .acs-hsb__progress-bar {
+    height: 63px;
+    background: #fff;
     -webkit-animation: fill_animation 5s;
     animation: myfirst 5s;
     -webkit-animation-iteration-count: infinite;

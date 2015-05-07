@@ -2,6 +2,7 @@
 @import "bourbon";
 @import "globals/*";
 @import "objects/*";
+@import "partials/*";
 @import "widgets/*";
 
 /* Pattern Library Homepage CSS */
@@ -9,6 +10,7 @@
 body {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  color: $a-desktop-base-color;
 }
 
 a {

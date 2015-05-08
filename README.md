@@ -97,7 +97,7 @@ Next, to download or clone the project down and run it on your machine:
 
 ```
 $ cd folder_where_you_want_cuddlefish_to_live
-$ git clone https://github.com/bux-cuddlefish/bux-cuddlefish.github.io.git cuddlefish
+$ git clone https://github.com/cuddlefish-new/cuddlefish-new.github.io.git cuddlefish
 $ cd cuddlefish
 ```
 

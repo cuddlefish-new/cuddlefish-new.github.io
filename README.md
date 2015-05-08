@@ -152,6 +152,12 @@ While on `master`:
 $ middleman build && middleman deploy
 ```
 
+## Using Partials
+
+If you're contributing a reusable component or object, consider creating a "partial" (partials/_price-block.html.erb) instead of a view (i.e. price-block.html.erb). Here is the syntax for calling a partial inside of an erb view:
+
+```<%= partial "partials/price-block" %>```
+
 ## Bootstrap Helpers
 In order to trigger a JS modal or notice, we're using Bootstrap Helpers in our project. We'll trigger one of these elements by writing an "erb" tag like the one below.
 ```
@@ -161,5 +167,3 @@ You can find the full documentation and exmaples [here](http://fullscreen.github
 
 ## SCSS
 We're using the SCSS flavor of SASS, the documentation can be found [here](http://sass-lang.com/guide).
-
-## Using Partials

@@ -158,6 +158,8 @@ If you're contributing a reusable component or object, consider creating a "part
 
 ```<%= partial "partials/price-block" %>```
 
+For any clarification, refer to the middleman documentation around partials [here](https://middlemanapp.com/basics/partials/).
+
 ## Bootstrap Helpers
 In order to trigger a JS modal or notice, we're using Bootstrap Helpers in our project. We'll trigger one of these elements by writing an "erb" tag like the one below.
 ```

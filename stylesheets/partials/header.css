@@ -8,12 +8,12 @@
 .header__wrapper-inner-shadow {
   width: 100%;
   height: 181px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  /*border-bottom: 1px solid rgba(0,0,0,.1);*/ }
 
 /* line 15, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/partials/header.scss */
 .header__image--games {
   margin: 0 auto;
   width: 1283px;
   height: 183px;
-  background-image: url("../images/partials/header--games.png");
+  background-image: url("../images/partials/header--games.jpg");
   background-size: cover; }

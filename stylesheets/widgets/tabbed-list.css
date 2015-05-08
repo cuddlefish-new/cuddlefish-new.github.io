@@ -1,68 +1,110 @@
 /* line 3, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.left-nav {
+  float: left; }
+  /* line 6, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+  .left-nav img {
+    width: 200px;
+    margin-top: 60px; }
+
+/* line 12, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.tabbed-list__wrapper {
+  width: calc(100% - 200px);
+  float: right; }
+
+/* line 17, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
 .tabs {
-  margin-top: 60px;
-  margin-right: 20px;
-  font-size: 14px;
-  line-height: 1.25; }
-  /* line 10, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+  margin: 60px 20px; }
+  /* line 20, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
   .tabs .horizontal {
-    border-bottom: 1px solid #eaeaea; }
-  /* line 14, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+    border-bottom: 1px solid #ddd; }
+  /* line 24, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
   .tabs li {
     display: inline-block;
-    min-width: 20%;
-    margin-right: 5px;
+    width: 150px;
+    margin-right: 3px;
     position: relative;
     bottom: -1px;
     font-size: 12px;
     text-align: center;
-    background: #f9f9f9;
-    box-shadow: inset 0 -1px 0 #eaeaea; }
-    /* line 27, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+    background: #f6f6f6;
+    box-shadow: inset 0 -1px 0 #ddd; }
+    /* line 37, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+    .tabs li a {
+      display: block;
+      width: 100%;
+      color: #888;
+      line-height: 43px; }
+      /* line 44, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+      .tabs li a:hover {
+        text-decoration: underline; }
+    /* line 49, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
     .tabs li.active {
-      font-weight: bold;
       background: #fff;
-      border: 1px solid #eaeaea;
+      border: 1px solid #ddd;
       border-bottom: none;
       border-top: 2px solid orange;
       box-shadow: none; }
-    /* line 37, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
-    .tabs li a {
-      color: #333;
-      display: block;
-      width: 100%;
-      line-height: 46px; }
-    /* line 44, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
-    .tabs li a:hover {
-      text-decoration: underline; }
-
-/* line 50, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
-.tabbed_content {
-  padding: 38px 0;
-  border: 1px solid #eaeaea;
-  border-top: none; }
-
-/* line 56, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
-.tabbed-list__thumbnail {
-  padding: 30px 0;
-  clear: both;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-  border-radius: 3px; }
-  /* line 63, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
-  .tabbed-list__thumbnail:hover {
-    background: #fafafa; }
+      /* line 56, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+      .tabs li.active a {
+        color: #333;
+        font-weight: bold; }
+        /* line 60, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+        .tabs li.active a:hover {
+          text-decoration: none; }
 
 /* line 68, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.tabbed_content {
+  padding: 0 20px;
+  border: 1px solid #ddd;
+  border-top: none; }
+
+/* line 74, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.tabbed-list__group {
+  display: inline-block;
+  margin: 20px 1.65%;
+  -webkit-box-sizing: border-box;
+  vertical-align: top; }
+  /* line 81, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+  .tabbed-list__group:hover {
+    background: #f7f7f7;
+    background: #f3f3f3; }
+
+/* line 87, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.tabbed-list__thumbnail {
+  padding: 20px 25px;
+  clear: both;
+  overflow: hidden; }
+
+/* line 93, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
 .tabbed-list__image {
+  display: block;
   width: 113px;
   height: 161px;
-  margin: 0 auto;
-  display: block; }
+  margin: 0 auto; }
 
-/* line 75, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
-.tabbed-list__thumbnail--first {
-  background: #f2f2f2; }
-  /* line 78, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
-  .tabbed-list__thumbnail--first:hover {
-    background: #f2f2f2; }
+/* line 100, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.tabbed-list__best-seller-badge {
+  display: block;
+  margin-top: 6px;
+  height: 20px;
+  color: #008A00;
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 20px; }
+
+/* line 112, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.tabbed-list__best-seller-badge--true {
+  border: 1px solid #008A00;
+  border-radius: 2px; }
+
+/* line 117, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.tabbed-list__desc {
+  width: 113px;
+  font-size: 12px;
+  line-height: 1.36;
+  margin-top: 6px; }
+
+/* line 124, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/widgets/tabbed-list.scss */
+.tabbed-list__desc-link {
+  color: #0066C0; }

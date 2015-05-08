@@ -175,7 +175,7 @@ If you're contributing a reusable component or object, consider creating a "part
 
 For more specifics on using partials with middleman, refer to the documentation [here](https://middlemanapp.com/basics/partials/).
 
-## Bootstrap Helpers
+## Using Bootstrap Helpers (Modules)
 In order to trigger a JS modal or notice, we're using Bootstrap Helpers in our project. We'll trigger one of these elements by writing an "erb" tag like the one below.
 ```
 <%= alert_box 'You accepted the Terms of service.', dismissible: true %>

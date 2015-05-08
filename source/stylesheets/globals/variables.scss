@@ -1,26 +1,35 @@
-//general-colors
+// Shared Color Values
+
 $a-desktop-brand-color: #FF9900 !default; // bright-orange
 $a-desktop-link-color: #0066C0 !default; // bright-blue
-
-
-//text-colors
-$a-desktop-base-color: #333 !default; // black
-$a-mobile-base-color: #111 !default; // black on small screen, higher contrast
-$a-desktop-secondary-color: #888 !default; // gray
-$a-mobile-secondary-color: #666 !default; // gray on small screen
-$a-desktop-tertiary-color: #767676 !default; // Lighter Grey
-$a-mobile-tertiary-color: #999 !default; // lighter Grey on small screen
 $a-state-color: #C45500 !default; // orange
 $a-price-color: #B12704 !default; // red
-$a-link-color: #0066C0 !default; // blue
 
-//alert-colors
-$a-error-color: #d00 !default; // red
+
+// Desktop Text Color Values
+
+$a-desktop-base-color: #333 !default; // black
+$a-desktop-secondary-color: #888 !default; // gray
+$a-desktop-tertiary-color: #767676 !default; // Lighter Grey
+
+
+// Mobile Text Color Values
+
+$a-mobile-base-color: #111 !default; // black on small screen, higher contrast
+$a-mobile-secondary-color: #666 !default; // gray on small screen
+$a-mobile-tertiary-color: #999 !default; // lighter Grey on small screen
+
+
+// Alert Colors
+
 $a-success-color: #008A00 !default; // green
 $a-info-color: #BBD3DE !default; // blueish
 $a-warning-color: #ffd63f !default; // yellow-orangeish
+$a-error-color: #d00 !default; // red
 
-//structural-colors
+
+// Structural Colors
+
 $a-border-color: #ddd !default; // light gray border
 $a-border-color-variant: #e7e7e7 !default; // even lighter gray border
 $a-thumb-border: #e0e0e0 !default;
@@ -29,12 +38,15 @@ $a-offset-background-color: lighten($a-alternate-background-color, 1%) !default;
 $a-base-background-color: #fff !default; // White bg
 $a-nav-gradient-end: #eee !default;
 
-//Gradient Variables
+// Gradient Variables
+
 $CF-button-start: #f7dfa5;
 $CF-button-stop: #f0c14b;
 $CFbutton-background-primary: linear-gradient($CF-button-start, $CF-button-stop);
 
-//desktop-text-size
+
+// Desktop Text Sizes
+
 $a-desktop-size-mini: 11px;
 $a-desktop-size-small: 12px;
 $a-desktop-size-base: 13px;
@@ -42,7 +54,9 @@ $a-desktop-size-medium: 17px;
 $a-desktop-size-large: 21px;
 $a-desktop-size-extra-large: 28px;
 
-//desktop-spacing
+
+// Desktop Spacing
+
 $a-desktop-spacing-micro: 4px;
 $a-desktop-spacing-mini: 6px;
 $a-desktop-spacing-small: 10px;

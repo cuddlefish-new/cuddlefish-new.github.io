@@ -41,6 +41,8 @@
       color: $a-desktop-secondary-color;
       line-height: 43px;
 
+      transition: .1s ease;
+
       &:hover {
         text-decoration: underline;
       }
@@ -71,10 +73,13 @@
   border-top: none;
 }
 
+/* Tabbed List Thumnail View */
+
 .tabbed-list__group {
   display: inline-block;
   margin: 20px 1.65%;
   -webkit-box-sizing: border-box;
+  transition: .1s ease;
 
   vertical-align: top;
 
@@ -125,7 +130,31 @@
   color: $a-desktop-link-color;
 }
 
+/* Tabbed List Slat View */
 
 
+.tabbed-list__slat-group {
+  clear: both;
+  overflow: hidden;
 
+  display: inline-block;
+  margin: 20px 1.65%;
+  -webkit-box-sizing: border-box;
+  transition: .1s ease;
+
+  vertical-align: top;
+
+  &:hover {
+    background: lighten(#f2f2f2, 2%);
+    background: $a-alternate-background-color;
+  }
+}
+
+.tabbed-list__slat-image {
+  display: block;
+  width: 113px;
+  height: 161px;
+  margin: 0 auto;
+  float: left;
+}
 

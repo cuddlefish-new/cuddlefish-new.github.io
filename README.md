@@ -100,40 +100,39 @@ $ cd folder_where_you_want_cuddlefish_to_live
 $ git clone https://github.com/bux-cuddlefish/bux-cuddlefish.github.io.git cuddlefish
 $ cd cuddlefish
 $ git pull
-```
-
-## Contributing to Cuddlefish
-
-The `gh-pages` branch will serve as our `master` branch and the one that we deploy to "production". To contribute to the project you'll create a branch off of `gh-pages`, make your changes, & submit a pull request comparing your branch to `gh-pages`. To switch to this branch and pull down the latest changes:
-
-```
-$ git checkout gh-pages
 $ bundle install
 $ bundle exec middleman server
 $ open http://localhost:4567/
 ```
-
 `bundle install` will install all of our apps dependencies on your machine, `bundle exec middleman server` will start a local server so that you can view pages in your browser, and the open script will open the app in your browser.
 
-To start contributing to Cuddlefish create a new branch. Make sure you're branching off of `gh-pages` so we can merge your changes in later. To check which branch you're currently on by running:
+## Contributing to Cuddlefish
+
+The `master` branch will be our "base" branch and the one that we deploy to "production". Our `master` branch should always be clean or unbroken and ready to deploy at any time.
+
+To contribute to the project you'll create a branch off of `master`, make your changes, & submit a [pull request](https://guides.github.com/introduction/flow/) comparing your branch to `master`. 
+
+By default when you clone the project, you will be on the `master` branch. To check to make sure you're on this branch run: 
+
 ```
 $ git status
 ```
 You should see the terminal return something like:
 ```
-On branch gh-pages
-Your branch is up-to-date with 'origin/gh-pages'.
+On branch master
+Your branch is up-to-date with 'origin/master'.
 ```
-If you need to switch to the `gh-pages` branch, run: 
+
+To start contributing to Cuddlefish, create a new branch. Make sure you're branching off of `master` so we can merge your changes in later. If you need to switch to the `gh-pages` branch, run: 
 ```
-$ git checkout gh-pages
-$ git pull origin gh-pages
+$ git checkout master
+$ git pull origin master
 ```
 And then to create a new branch:
 ```
 $ git checkout -b your-branch-name
 ```
-You should try to name your branch after an issue you're addressing/fixing or after the widget you'll be designing. 
+You should try to name your branch after an issue you're addressing/fixing or after the widget you're designing. 
 
 Once you make changes you want to commit to your branch push your branch up to GitHub:
 
@@ -143,14 +142,14 @@ $ git push origin your-branch-name
 
 ## Submitting a Pull Request
 
-If you have a branch going with changes that you're ready to have pulled or merged into our master/base branch (`gh-pages`), create a pull request on GitHub comparing your changes with the base branch. Let's make the rule that for now you need to have at least one other person review your code before it can be merged into the base and deployed. This also applies to any refactoring as well, not only new widgets designs.
+If you have a branch going with changes that you're ready to have pulled or merged into our master/base branch (`master`), create a pull request on GitHub comparing your changes with the base branch. Let's make the rule that for now you need to have at least one other person review your code before it can be merged into the base and deployed. This also applies to any refactoring as well, not only new widgets designs.
 
 ## Building & Deploying Cuddlefish
 
+While on `master`:
+
 ```
-$ middleman build
-$ git push origin gh-pages
-$ open http://cuddlefish.io/
+$ middleman build && middleman deploy
 ```
 
 ## Bootstrap Helpers
@@ -162,3 +161,5 @@ You can find the full documentation and exmaples [here](http://fullscreen.github
 
 ## SCSS
 We're using the SCSS flavor of SASS, the documentation can be found [here](http://sass-lang.com/guide).
+
+## Using Partials

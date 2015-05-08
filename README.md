@@ -1,8 +1,6 @@
 # Cuddlefish
 Cuddlefish is a rapid prototyping environment for designing-in-browser.
 
-Table of Contents:
-
 1. [Team Coding Philosophy](https://github.com/cuddlefish-new/cuddlefish-new.github.io#team-coding-philosophy)
 2. [Getting Cuddlefish Running On Your Machine](https://github.com/cuddlefish-new/cuddlefish-new.github.io#getting-cuddlefish-running-on-your-machine)
 3. [Contributing to Cuddlefish](https://github.com/cuddlefish-new/cuddlefish-new.github.io#contributing-to-cuddlefish)

@@ -1,98 +1,11 @@
 @import "globals/variables";
 
-.asin__block__container {
-}
-
-/* ASIN Image */
-.product__image {
-  width: 10%;
-  padding-bottom: 10px;
-  text-align: left;
-}
-
-/* ASIN Link */
-.product__link {
-  font-family: Arial;
-  font-size: 13px;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: $a-desktop-base-color;
-  text-decoration: none;
-}
-
-.product__link:active {
-  color: $a-desktop-base-color;
-}
-
-.product__link:visited {
-  color: $a-desktop-base-color;
-}
-
-.list__price {
-  font-family: Arial;
-  font-size: 11px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-decoration: line-through;
-}
-
-.red__price {
-  font-family: Arial;
-  font-size: 13px;
-}
-
-/* Review Stars */
-.reviews {
-  clear: both;
-  overflow: hidden;
-  margin-top: 20000px;
-}
-
-.reviews__container {
-  vertical-align: middle;
-}
-
-.reviews__stars {
-  display: inline-block;
-  width: 80px;
-  height: 18px;
-  box-sizing: border-box; 
-  -moz-box-sizing: border-box;
-  background-position: -175px -368px;
-  background-image: url("../../images/aui-sprite.png");
-  background-repeat: no-repeat;
-  background-size: 400px 650px;
-}
-
-.reviews__star__number {
-  display: inline-block;
-  font-family: Arial;
-  font-size: 13px;
-  line-height: 18px;
-}
-
-.reviews__star__number:active {
-  box-sizing: border-box;
-  color: #0066c0;
-  font-size: 13px;
-}
-
-.reviews__star__number:visited {
-  color: #0066c0;
-}
-
-/* Narwhal's */
-
-.price-block__container{
-	margin: 10px;
-}
-
 .image--placeholder {
-	width:170px;
+	width: 170px;
 	height: 150px;
-	display:block;
+	display: block;
 
-	background-color: $a-alternate-background-color;
+	background: $a-alternate-background-color;
 }
 
 .price-block__title {
@@ -109,18 +22,17 @@
 
   text-decoration: line-through;
   font-size: a-desktop-size-mini;
-
-  color: #bbb;
+  
+  color: #666;
 }
 
 .price-block__price--buy {
   display: inline-block;
 
-  font: a-desktop-size-base; 
+  color: #b12704;
+  font-size: a-desktop-size-base; 
   line-height: 20px;
   text-decoration: none;
-
-  color: #b12704;
 }
 
 .price-block__button--add-to-cart {
@@ -141,7 +53,7 @@
 }
 
 .icon--prime {
-  margin-bottom: a-desktop-spacing-micro;
+  margin-bottom: $a-desktop-spacing-micro;
   width: 52px;
   height: 16px;
   display: block;
@@ -156,6 +68,7 @@
   width: 80px;
   height: 16px;
   display: block;
+  margin-top: $a-desktop-spacing-micro;
 
   vertical-align: baseline;
 
@@ -165,6 +78,7 @@
 
 .stock--availability {
 	display: block;
+  margin-top: $a-desktop-spacing-micro;
 
 	font-size: 11px;
 	color: #008a00;

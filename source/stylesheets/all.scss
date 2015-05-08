@@ -2,6 +2,7 @@
 @import "bourbon";
 @import "globals/*";
 @import "objects/*";
+@import "partials/*";
 @import "widgets/*";
 
 /* Pattern Library Homepage CSS */
@@ -9,6 +10,7 @@
 body {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  color: $a-desktop-base-color;
 }
 
 a {
@@ -16,17 +18,13 @@ a {
 }
 
 a:visited {
-  color: #333;
+  color: $a-desktop-link-color;
 }
 
 .grid {
   max-width: 1500px;
   margin: 0 auto;
   overflow: hidden;
-}
-
-.grid__main {
-  min-width: 1000px;
 }
 
 .jumbotron {

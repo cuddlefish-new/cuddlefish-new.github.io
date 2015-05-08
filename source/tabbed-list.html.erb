@@ -1,68 +1,123 @@
 ---
 title: Tabbed List Widget Exploration
 ---
-<body> 
-  <div class="grid grid__main">
-    <div class="grid__col grid__col--1-of-3">
-     <div class="left-nav">
-       
-     </div>
-    </div>  
-    <div class="grid__col grid__col--2-of-3">
-     <div class="tabbed-list">
 
-      <!-- Tab JS -->
-      <script type="text/javascript" />
-        $('.tabs').tabslet();
-      </script>
+<body>
+  <%= partial "partials/header" %>
 
-      <div class='tabs tabs_default'>
-        <ul class='horizontal'>
-          <li><a href="#tab-1">Best Sellers</a></li>
-          <li><a href="#tab-2">Indie Titles</a></li>
-          <li><a href="#tab-3">PC Best Sellers</a></li>
-        </ul>
+  <div class="left-nav">
+    <%= image_tag "partials/left-nav.jpg" %>
+  </div>
 
-        <div id='tab-1' class="tabbed_content">
-          <span>
-            <div class="grid">
-              <div class="grid__col grid__col--1-of-4">
-               <div class="tabbed-list__thumbnail tabbed-list__thumbnail--first">
-                <a href="#">
-                  <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
-                </a>
-               </div>
-              </div>
+  <div class="tabbed-list__wrapper">
 
-              <div class="grid__col grid__col--1-of-4">
-               <div class="tabbed-list__thumbnail">
-                <a href="#">
-                  <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
-                </a>
-               </div>
-              </div>
-              <div class="grid__col grid__col--1-of-4">
-               <div class="tabbed-list__thumbnail">
-                <a href="#">
-                  <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
-                </a>
-               </div>
-              </div>
+    <!-- Tab JS -->
+    <script type="text/javascript" />
+      $('.tabs').tabslet();
+    </script>
 
-              <div class="grid__col grid__col--1-of-4">
-                <div class="tabbed-list__thumbnail">
-                  <a href="#">
-                    <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
+    <div class='tabs tabs_default'>
+      <ul class='horizontal'>
+        <li><a href="#tab-1">Best Sellers</a></li>
+        <li><a href="#tab-2">Indie Titles</a></li>
+        <li><a href="#tab-3">PC Best Sellers</a></li>
+      </ul>
+
+      <div id='tab-1' class="tabbed_content">
+        <span>
+          <div class="tabbed-list__group tabbed-list__group--first">
+            <div class="tabbed-list__thumbnail">
+              <a href="#">
+                <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
+                <p class="tabbed-list__best-seller-badge tabbed-list__best-seller-badge--true">
+                  #1 Seller
+                </p>
+                <div class="tabbed-list__desc">
+                  <a href="#" class="tabbed-list__desc-link">
+                    BioShock Infinite - Xbox 360
+                    <span></span>
                   </a>
-               </div>
-              </div>
+                  <%= partial "partials/price-block" %>
+                </div>
+              </a>
             </div>
-          </span>
-        </div>
-        <div id='tab-2' class="tabbed_content"><span>Tab 2</span></div>
-        <div id='tab-3' class="tabbed_content"><span>Tab 3</span></div>
+          </div>
+
+          <div class="tabbed-list__group">
+            <div class="tabbed-list__thumbnail">
+              <a href="#">
+                <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
+                <p class="tabbed-list__best-seller-badge">
+                </p>
+                <div class="tabbed-list__desc">
+                  <a href="#" class="tabbed-list__desc-link">
+                    BioShock Infinite - Xbox 360
+                    <span></span>
+                  </a>
+                  <%= partial "partials/price-block" %>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="tabbed-list__group">
+            <div class="tabbed-list__thumbnail">
+              <a href="#">
+                <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
+                <p class="tabbed-list__best-seller-badge">
+                </p>
+                <div class="tabbed-list__desc">
+                  <a href="#" class="tabbed-list__desc-link">
+                    BioShock Infinite - Xbox 360
+                    <span></span>
+                  </a>
+                  <%= partial "partials/price-block" %>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="tabbed-list__group">
+            <div class="tabbed-list__thumbnail">
+              <a href="#">
+                <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
+                <p class="tabbed-list__best-seller-badge">
+                </p>
+                <div class="tabbed-list__desc">
+                  <a href="#" class="tabbed-list__desc-link">
+                    BioShock Infinite - Xbox 360
+                    <span></span>
+                  </a>
+                  <%= partial "partials/price-block" %>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="tabbed-list__group">
+            <div class="tabbed-list__thumbnail">
+              <a href="#">
+                <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
+                <p class="tabbed-list__best-seller-badge">
+                </p>
+                <div class="tabbed-list__desc">
+                  <a href="#" class="price-block__title">BioShock Infinite - Xbox 360</a>
+                  <%= partial "partials/price-block" %>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </span>
       </div>
-     </div>
+
+      <div id='tab-2' class="tabbed_content">
+        <span>Tab 2</span>
+      </div>
+
+      <div id='tab-3' class="tabbed_content">
+        <span>Tab 3</span>
+      </div>
     </div>
   </div>
 </body>

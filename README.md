@@ -158,14 +158,14 @@ If you're contributing a reusable component or object, consider creating a "part
 
 ```<%= partial "partials/price-block" %>```
 
-For any clarification, refer to the middleman documentation around partials [here](https://middlemanapp.com/basics/partials/).
+For more specifics on using partials with middleman, refer to the documentation [here](https://middlemanapp.com/basics/partials/).
 
 ## Bootstrap Helpers
 In order to trigger a JS modal or notice, we're using Bootstrap Helpers in our project. We'll trigger one of these elements by writing an "erb" tag like the one below.
 ```
 <%= alert_box 'You accepted the Terms of service.', dismissible: true %>
 ```
-You can find the full documentation and exmaples [here](http://fullscreen.github.io/bh/).
+You can find the full documentation and examples [here](http://fullscreen.github.io/bh/).
 
 ## SCSS
 We're using the SCSS flavor of SASS, the documentation can be found [here](http://sass-lang.com/guide).

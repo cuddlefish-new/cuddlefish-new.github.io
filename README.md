@@ -1,12 +1,14 @@
 # Cuddlefish
 Cuddlefish is a rapid prototyping environment for designing-in-browser.
 
+Table of Contents:
+
 1. [Team Coding Philosophy](https://github.com/cuddlefish-new/cuddlefish-new.github.io#team-coding-philosophy)
 2. [Getting Cuddlefish Running On Your Machine](https://github.com/cuddlefish-new/cuddlefish-new.github.io#getting-cuddlefish-running-on-your-machine)
 3. [Contributing to Cuddlefish](https://github.com/cuddlefish-new/cuddlefish-new.github.io#contributing-to-cuddlefish)
 4. [Submitting A Pull Request](https://github.com/cuddlefish-new/cuddlefish-new.github.io#submitting-a-pull-request)
 5. [Building & Deploying Cuddlefish](https://github.com/cuddlefish-new/cuddlefish-new.github.io#building--deploying-cuddlefish)
-6.[Using Partials](https://github.com/cuddlefish-new/cuddlefish-new.github.io#using-partials)
+6. [Using Partials](https://github.com/cuddlefish-new/cuddlefish-new.github.io#using-partials)
 7. [Using Bootstrap Modules (Helpers)](https://github.com/cuddlefish-new/cuddlefish-new.github.io#bootstrap-helpers)
 8. [SCSS](https://github.com/cuddlefish-new/cuddlefish-new.github.io#scss)
 

@@ -99,6 +99,11 @@ Next, to download or clone the project down and run it on your machine:
 $ cd folder_where_you_want_cuddlefish_to_live
 $ git clone https://github.com/bux-cuddlefish/bux-cuddlefish.github.io.git cuddlefish
 $ cd cuddlefish
+```
+
+To get started dev-ing:
+
+```
 $ git pull
 $ bundle install
 $ bundle exec middleman server

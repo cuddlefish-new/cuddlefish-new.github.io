@@ -7,7 +7,7 @@ Cuddlefish is a rapid prototyping environment for designing-in-browser.
 4. [Submitting A Pull Request](https://github.com/cuddlefish-new/cuddlefish-new.github.io#submitting-a-pull-request)
 5. [Building & Deploying Cuddlefish](https://github.com/cuddlefish-new/cuddlefish-new.github.io#building--deploying-cuddlefish)
 6. [Using Partials](https://github.com/cuddlefish-new/cuddlefish-new.github.io#using-partials)
-7. [Using Bootstrap Modules (Helpers)](https://github.com/cuddlefish-new/cuddlefish-new.github.io#bootstrap-helpers)
+7. [Using Bootstrap Helpers (Modules)](https://github.com/cuddlefish-new/cuddlefish-new.github.io#using-bootstrap-helpers-modules)
 8. [SCSS](https://github.com/cuddlefish-new/cuddlefish-new.github.io#scss)
 
 

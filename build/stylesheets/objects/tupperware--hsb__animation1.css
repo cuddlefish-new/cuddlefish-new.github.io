@@ -1,11 +1,13 @@
-/* line 4, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+@import url("globals/variables") screen;
+@import url("normalize.css") screen;
+/* line 5, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget {
   min-width: 770px;
   margin-left: 205px;
   margin-top: 10px;
   padding: 5px 10px 5px 5px; }
 
-/* line 11, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 12, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-hsb-container {
   width: 100%;
   height: 360px;
@@ -14,7 +16,7 @@
   text-align: center;
   border: 1px solid black; }
 
-/* line 22, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 23, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-menu-wrap {
   width: 100%;
   height: 360px;
@@ -24,14 +26,14 @@
   z-index: 25;
   text-align: center; }
 
-/* line 33, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 34, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .ascux-menu-container {
   width: 770px;
   height: 360px;
   position: relative;
   margin: 0 auto; }
 
-/* line 40, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 41, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-menu {
   position: absolute;
   top: 10px;
@@ -45,7 +47,7 @@
   cursor: pointer;
   display: block; }
 
-/* line 55, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 56, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-menu li {
   width: 215px;
   margin: 0;
@@ -67,79 +69,70 @@
   background: linear-gradient(top, #f5f5f5, #e3e3e3);
   display: block; }
 
-/* line 80, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 82, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-menu li:first-child {
   -webkit-border-radius: 3px 3px 0 0;
   -moz-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0;
   border-width: 1px; }
 
-/* line 87, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 89, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-menu {
   -webkit-border-radius: 0 0 3px 3px;
   -moz-border-radius: 0 0 3px 3px;
   border-radius: 0 0 3px 3px; }
 
-/* line 93, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
-.acs-dhsb-widget .acsux-menu .acsux-active {
-  background: #fff; }
-
-/* line 97, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
-.acs-dhsb-widget .acsux-menu .acsux-active .acsux-inner-menu a {
-  color: #333; }
-
-/* line 101, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 95, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-menu .acsux-inner-menu a {
   text-decoration: none;
   font-family: Arial, sans-serif;
   font-weight: 700;
   font-size: 13px;
-  color: #666;
-  line-height: 1.15; }
+  line-height: 1.15;
+  color: #666; }
 
-/* line 110, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 105, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-menu .acsux-inner-menu a:hover {
   text-decoration: underline; }
 
-/* line 114, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 109, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-menu .acsux-inner-menu img {
   position: relative;
-  margin-bottom: 10px;
   float: left;
+  margin-bottom: 10px;
   margin-left: 10px;
   margin-top: 10px;
   border: 1px solid #fff; }
 
-/* line 124, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 119, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-menu .acsux-inner-menu div {
   width: 215px;
-  position: relative;
-  padding-top: 10px; }
+  position: relative; }
 
-/* line 130, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 124, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-menu .acsux-inner-menu span {
   color: #666;
   margin: 3px 0;
   line-height: 1.15;
-  padding-bottom: 10px;
+  padding-bottom: 17px;
   font-family: arial, sans-serif;
   font-size: 11px;
   display: block; }
 
-/* line 143, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 136, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-hero-wrap {
   position: relative;
   top: 0;
   left: 0; }
 
-/* line 148, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 141, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-hero {
   position: relative;
   top: 0;
   list-style: none;
   display: block; }
 
-/* line 155, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 148, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-hero li {
   height: 360px;
   width: 100%;
@@ -148,12 +141,12 @@
   display: block;
   display: inline-block; }
 
-/* line 166, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 159, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-hero li span {
   display: none;
   visibility: none; }
 
-/* line 171, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 164, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acs-dhsb-container {
   width: 100%;
   max-width: 1200px;
@@ -161,7 +154,7 @@
   margin: 0 auto 24px;
   position: relative; }
 
-/* line 179, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 172, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .min-width-constraint {
   width: 770px;
   margin-left: -385px;
@@ -170,7 +163,7 @@
   top: 0;
   left: 50%; }
 
-/* line 188, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 181, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acsux-hero {
   height: 360px;
   width: 100%;
@@ -179,7 +172,7 @@
   border: 1px solid #ddd;
   overflow: hidden; }
 
-/* line 199, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 192, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acs-dhsb-gradient {
   width: 100%;
   height: 100%;
@@ -195,14 +188,14 @@
   background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.05) 55%, rgba(0, 0, 0, 0.35) 100%);
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 55%, rgba(0, 0, 0, 0.35) 100%); }
 
-/* line 216, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 209, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acs-dhsb-workable-area {
   width: 537px;
   text-align: center;
   position: relative;
   height: 360px; }
 
-/* line 223, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
+/* line 216, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
 .acs-dhsb-widget .acs-dhsb-text {
   width: 500px;
   padding: 10px 25px;
@@ -218,29 +211,19 @@
   top: 170px;
   left: 0; }
 
-/* line 239, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
-.acs-hsb__loading-bar {
-  width: 542px;
-  height: 1px; }
+/* background progress bar*/
+/* line 235, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware--hsb__animation1.scss */
+.acs-hsb__load-bar {
+  height: 3px;
+  background: #FF9900;
+  position: absolute;
+  -webkit-animation: fill_animation 5s;
+  animation: myfirst 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear; }
 
-/* line 244, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/tupperware-hsb.scss */
-.acs-hsb__loading-bar .loading-bar {
-  height: 1px;
-  background: orange;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-  animation: loading 5s;
-  -webkit-animation: loading 5s;
-  animation-iteration-count: 20; }
-
-/*----- Loading-bar animation -----*/
-@keyframes loading {
-  0% {
+@-webkit-keyframes fill_animation {
+  from {
     width: 0%; }
-  100% {
-    width: 100%; } }
-@-webkit-keyframes loading {
-  0% {
-    width: 0%; }
-  100% {
+  to {
     width: 100%; } }

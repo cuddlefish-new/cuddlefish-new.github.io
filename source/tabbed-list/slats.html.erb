@@ -1,0 +1,72 @@
+---
+title: Tabbed List Widget Exploration
+---
+
+<body>
+  <%= partial "partials/header" %>
+
+  <div class="left-nav">
+    <%= image_tag "partials/left-nav.jpg" %>
+  </div>
+
+  <div class="tabbed-list__wrapper">
+
+    <!-- Tab JS -->
+    <script type="text/javascript" />
+      $('.tabs').tabslet();
+    </script>
+
+    <div class='tabs tabs_default'>
+      <ul class='horizontal'>
+        <li class="tabs__item"><a href="#tab-1">Best Sellers</a></li>
+        <li class="tabs__item"><a href="#tab-2">Indie Titles</a></li>
+        <li class="tabs__item"><a href="#tab-3">PC Best Sellers</a></li>
+        <div class="tabbed-list__dropdown-wrapper">
+          <ul class="tabbed-list__dropdown">
+            <li class="tabbed-list__dropdown-target">
+              Sort by <i class="tabbed-list__dropdown-caret"></i>
+              <ul>
+                <li>Lowest Price</li>
+                <li>Prime Shipping</li>
+                <li>Highest Rated</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </ul>
+
+      <div id='tab-1' class="tabbed_content">
+        <span>
+          <div class="tabbed-list__slats">
+            <%= partial "partials/tabbed-list--slat" %>
+            <%= partial "partials/tabbed-list--slat" %>
+            <%= partial "partials/tabbed-list--slat" %>
+            <%= partial "partials/tabbed-list--slat" %>
+          </div>
+        </span>
+      </div>
+
+      <div id='tab-2' class="tabbed_content">
+        <span>
+          <div class="tabbed-list__slats">
+            <%= partial "partials/tabbed-list--slat" %>
+            <%= partial "partials/tabbed-list--slat" %>
+            <%= partial "partials/tabbed-list--slat" %>
+            <%= partial "partials/tabbed-list--slat" %>
+          </div>
+        </span>
+      </div>
+
+      <div id='tab-3' class="tabbed_content">
+        <span>
+          <div class="tabbed-list__slats">
+            <%= partial "partials/tabbed-list--slat" %>
+            <%= partial "partials/tabbed-list--slat" %>
+            <%= partial "partials/tabbed-list--slat" %>
+            <%= partial "partials/tabbed-list--slat" %>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>

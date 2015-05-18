@@ -20,51 +20,55 @@
   .horizontal {
     border-bottom: 1px solid $a-border-color;
   }
+}
 
-	li {
-    display: inline-block;
-    width: 150px;
-    margin-right: 3px;
-    position: relative;
-    bottom: -1px;
+.tabs__item {
+  display: inline-block;
+  width: 150px;
+  margin-right: 0;
+  position: relative;
+  bottom: -1px;
 
-    font-size: 12px;
-    text-align: center;
+  font-size: 12px;
+  text-align: center;
 
-    background: $a-offset-background-color;
-    box-shadow: inset 0 -1px 0 $a-border-color;
+  background: $a-offset-background-color;
+  box-shadow: inset 0 -1px 0 $a-border-color;
+
+  a {
+    display: block;
+    width: 100%;
+
+    color: $a-desktop-secondary-color;
+    line-height: 43px;
+
+    transition: .1s ease;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.active {
+    background: #fff;
+    border: 1px solid $a-border-color;
+    border-bottom: none;
+    border-top: 2px solid orange;
+    box-shadow: none;
 
     a {
-      display: block;
-      width: 100%;
-
-      color: $a-desktop-secondary-color;
-      line-height: 43px;
-
-      transition: .1s ease;
+      color: $a-desktop-base-color;
+      font-weight: bold;
 
       &:hover {
-        text-decoration: underline;
+        text-decoration: none;
       }
     }
+  }
 
-    &.active {
-      background: #fff;
-      border: 1px solid $a-border-color;
-      border-bottom: none;
-      border-top: 2px solid orange;
-      box-shadow: none;
-
-      a {
-        color: $a-desktop-base-color;
-        font-weight: bold;
-
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-	}
+  @media(max-width: 700px) {
+    width: 110px;
+  }
 }
 
 .tabbed_content {
@@ -73,12 +77,12 @@
   border-top: none;
 }
 
+
 /* Tabbed List Thumnail View */
 
 .tabbed-list__group {
   display: inline-block;
   margin: 20px 1.65%;
-  -webkit-box-sizing: border-box;
   transition: .1s ease;
 
   vertical-align: top;
@@ -106,17 +110,26 @@
   display: block;
   margin-top: $a-desktop-spacing-mini;
   height: 20px;
+  position: relative;
+  margin-top: -20px;
+  margin-right: auto;
+  margin-left: auto;
 
-  color: $a-success-color;
+  color: #FEBD68;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
   line-height: 20px;
 }
 
 .tabbed-list__best-seller-badge--true {
-  border: 1px solid $a-success-color;
-  border-radius: 2px;
+  text-shadow: 0 -1px 0 darken(#24303F,6%);
+
+  background: #24303F;
+  border-bottom: 1px solid darken(#24303F,10%);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,.15),
+                    0 1px 1px rgba(0,0,0,.07),
+                    0 -1px 1px rgba(0,0,0,.25);
 }
 
 .tabbed-list__desc {
@@ -130,23 +143,68 @@
   color: $a-desktop-link-color;
 }
 
+
 /* Tabbed List Slat View */
 
+.tabbed-list__slats {
+  padding: 20px 0 10px 0;
+}
 
 .tabbed-list__slat-group {
   clear: both;
   overflow: hidden;
 
+  width: 100%;
   display: inline-block;
-  margin: 20px 1.65%;
-  -webkit-box-sizing: border-box;
-  transition: .1s ease;
-
+  margin: 0 1.65% 10px 0;
   vertical-align: top;
 
-  &:hover {
-    background: lighten(#f2f2f2, 2%);
-    background: $a-alternate-background-color;
+  @media(min-width: 910px) {
+    width: 48%;
+  }
+
+  .price-block__container {
+    float: left;
+
+    font-size: $a-desktop-size-small;
+  }
+
+  .price-block__review {
+    clear: both;
+    overflow: hidden;
+
+    .icon--stars {
+      float: left;
+      width: 60px;
+      height: 13px;
+      background-position: -230px -590px;
+    }
+  }
+
+  .price-block__review-number {
+    display: inline-block;
+    float: left;
+    padding-top: 4px;
+    padding-left: 2px;
+
+    color: $a-desktop-link-color;
+
+    &:hover {
+      color: orange;
+    }
+  }
+
+  .price-block__price {
+    margin-top: 3px;
+    margin-bottom: 1px;
+
+    .price-block__price--buy {
+      padding-right: 2px;
+    }
+
+    .price-block__price--off {
+      text-decoration: none;
+    }
   }
 }
 
@@ -154,7 +212,94 @@
   display: block;
   width: 113px;
   height: 161px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   float: left;
 }
 
+.tabbed-list__slat-title {
+  display: block;
+  margin-top: 6px;
+
+  color: #0066C0;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.tabbed-list__slat-description {
+  margin-top: 6px;
+  
+  font-size: $a-desktop-size-base;
+  line-height: 1.27;
+}
+
+
+.tabbed-list__slat-group--bottom {
+  margin-top: 12px;
+  float: left;
+  width: calc(100% - 128px);
+}
+
+/* Modal Trigger Button */
+
+.modal__button-container {
+  width: 100%;
+  margin-bottom: 10px;
+
+  @media(min-width: 610px) {
+    float: right;
+    width: 45%;
+  }
+
+  @media(min-width: 910px) {
+    float: left;
+    width: 100%;
+  }
+
+  @media(min-width: 1010px) {
+    float: right;
+    width: 45%;
+  }
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0;
+  vertical-align: middle;
+  outline: 0;
+
+  text-align: center;
+  text-decoration: none!important;
+}
+
+.btn-default {
+  padding: 6px 18px;
+  float: right;
+  border: 1px solid;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  background-color: #e7e9ec;
+  background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+  border-radius: 2px;
+  color: #111;
+  font-size: $a-desktop-size-base;
+
+  @media(min-width: 0) and (max-width: 600px) {
+    float: left;
+    margin-top: -1px;
+    margin-bottom: 6px;
+  }
+
+  @media(min-width: 910px) and (max-width: 1009px) {
+    float: left;
+  }
+}
+
+
+/* ====== media ====== */
+.media {margin:10px;}
+.media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
+.media .img {float:left; margin-right: 15px;}
+.media .img img{display:block;}
+.media .imgExt{float:right; margin-left: 10px;}

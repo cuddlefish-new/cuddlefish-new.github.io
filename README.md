@@ -1,6 +1,16 @@
 # Cuddlefish
 Cuddlefish is a rapid prototyping environment for designing-in-browser.
 
+1. [Team Coding Philosophy](#team-coding-philosophy)
+2. [Getting Cuddlefish Running on your Machine](#getting-cuddlefish-running-on-your-machine)
+3. [Contributing to Cuddlefish](#contributing-to-cuddlefish)
+4. [Submitting a Pull Request](#submitting-a-pull-request)
+5. [Building & Deploying Cuddlefish](#building--deploying-cuddlefish)
+6. [Using Partials](#using-partials)
+7. [Using Bootstrap Helpers (Modules)](#using-bootstrap-helpers-modules)
+8. [SCSS](#scss)
+
+
 ## Team Coding Philosophy
 
 Below is a list of coding considerations when contributing to Cuddlefish.
@@ -165,7 +175,7 @@ If you're contributing a reusable component or object, consider creating a "part
 
 For more specifics on using partials with middleman, refer to the documentation [here](https://middlemanapp.com/basics/partials/).
 
-## Bootstrap Helpers
+## Using Bootstrap Helpers (Modules)
 In order to trigger a JS modal or notice, we're using Bootstrap Helpers in our project. We'll trigger one of these elements by writing an "erb" tag like the one below.
 ```
 <%= alert_box 'You accepted the Terms of service.', dismissible: true %>

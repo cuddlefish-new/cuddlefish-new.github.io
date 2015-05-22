@@ -15,7 +15,7 @@
 }
 
 .tabs {
-  margin: 60px 20px;
+  margin: 60px 20px 0 20px;
 
   .horizontal {
     border-bottom: 1px solid $a-border-color;
@@ -75,6 +75,7 @@
   padding: 0 20px;
   border: 1px solid $a-border-color;
   border-top: none;
+  border-bottom: none;
 }
 
 
@@ -83,20 +84,18 @@
 .tabbed-list__group {
   display: inline-block;
   margin: 20px 1.65%;
+  vertical-align: top;
   transition: .1s ease;
 
-  vertical-align: top;
-
   &:hover {
-    background: lighten(#f2f2f2, 2%);
     background: $a-alternate-background-color;
   }
 }
 
 .tabbed-list__thumbnail {
-  padding: 20px 25px;
   clear: both;
   overflow: hidden;
+  padding: 20px 25px;
 }
 
 .tabbed-list__image {
@@ -153,19 +152,22 @@
 .tabbed-list__slat-group {
   clear: both;
   overflow: hidden;
-
+  margin-right: 10px;
   width: 100%;
   display: inline-block;
-  margin: 0 1.65% 10px 0;
   vertical-align: top;
 
   @media(min-width: 910px) {
-    width: 48%;
+    width: calc(50% - 10px);
+    margin-right: 0;
+
+    &:nth-child(2n + 1) {
+      margin-right: 10px;
+    }
   }
 
   .price-block__container {
     float: left;
-
     font-size: $a-desktop-size-small;
   }
 
@@ -196,7 +198,7 @@
 
   .price-block__price {
     margin-top: 3px;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
 
     .price-block__price--buy {
       padding-right: 2px;
@@ -227,11 +229,10 @@
 
 .tabbed-list__slat-description {
   margin-top: 6px;
-  
+
   font-size: $a-desktop-size-base;
   line-height: 1.27;
 }
-
 
 .tabbed-list__slat-group--bottom {
   margin-top: 12px;
@@ -293,6 +294,40 @@
 
   @media(min-width: 910px) and (max-width: 1009px) {
     float: left;
+  }
+}
+
+/* Footer */
+
+.tabbed-list__footer {
+  clear: both;
+  overflow: hidden;
+
+  margin: 0 20px;
+  padding: 10px 30px;
+  border: 1px solid $a-border-color;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  white-space: nowrap;
+  background: lighten($a-offset-background-color,3%);
+}
+
+.tabbed-list__footer-breadcrumbs {
+  float: right;
+}
+
+.tabbed-list__footer-breadcrumb {
+  display: inline-block;
+  font-size: $a-desktop-size-base;
+
+  i {
+    font-size: 9px;
+    color: rgba(0,0,0,.3);
+    padding-left: 3px;
+    padding-right: 2px;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 }
 

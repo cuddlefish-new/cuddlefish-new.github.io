@@ -1,0 +1,118 @@
+/* Tabbed list sort function */
+/* line 5, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown-wrapper {
+  padding-right: 4px;
+  height: 48px;
+  float: right; }
+  @media (max-width: 835px) {
+    /* line 5, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+    .tabbed-list__dropdown-wrapper {
+      display: none; } }
+
+/* line 15, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown {
+  float: right;
+  display: inline;
+  margin: 0;
+  padding-top: 4px;
+  list-style: none; }
+
+/* line 23, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown li {
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 12px; }
+
+/* line 33, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown-target {
+  font-weight: bold;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px; }
+
+/* line 40, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown-target--gray-text {
+  padding-right: 1px;
+  color: #767676;
+  font-weight: normal; }
+
+/* line 46, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown-caret {
+  width: 0;
+  height: 0;
+  position: relative;
+  top: 6.5px;
+  left: 6px;
+  float: right;
+  border-top: 3.5px solid #767676;
+  border-left: 3.5px solid transparent;
+  border-right: 3.5px solid transparent; }
+
+/* line 59, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list-dropdown-caret--top {
+  width: 0;
+  height: 0;
+  position: relative;
+  top: 1.5px;
+  left: 0;
+  float: right;
+  border-left: 3.5px solid transparent;
+  border-right: 3.5px solid transparent;
+  border-bottom: 3.5px solid #767676; }
+
+/* line 73, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown-target:hover .tabbed-list__dropdown-caret {
+  border-top-color: rgba(0, 0, 0, 0.4); }
+/* line 77, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown-target:hover .tabbed-list-dropdown-caret--top {
+  border-bottom-color: rgba(0, 0, 0, 0.4); }
+/* line 81, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown-target:hover .tabbed-list__dropdown-target--gray-text {
+  color: #fff; }
+
+/* line 86, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown li:hover {
+  background: #555;
+  color: #fff; }
+
+/* line 91, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown li ul {
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  z-index: 9999;
+  top: 32px;
+  right: -1px;
+  width: 161px;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: none; }
+
+/* line 108, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown li ul li {
+  display: block;
+  padding: 11px 20px;
+  color: #333;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  /* line 117, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+  .tabbed-list__dropdown li ul li:last-child {
+    border-bottom: none; }
+
+/* line 122, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown li ul li:hover {
+  background: #666; }
+
+/* line 123, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/objects/dropdown.scss */
+.tabbed-list__dropdown li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  z-index: 9999; }

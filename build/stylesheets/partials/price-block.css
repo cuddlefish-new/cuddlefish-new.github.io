@@ -31,7 +31,7 @@
 .price-block__button--add-to-cart {
   width: 115px;
   height: 30px;
-  padding: a-desktop-spacing-micro;
+  padding: 4px;
   display: inline-block;
   text-align: center;
   border: 1px solid #a88734;

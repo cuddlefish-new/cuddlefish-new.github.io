@@ -1,0 +1,75 @@
+.tabbed-list__wrapper--mobile {
+  margin-top: 205px;
+}
+
+.tabbed_content--mobile {
+  clear: both;
+  overflow: hidden;
+
+  width: 500px;
+  padding: 0 10px 7px 10px;
+  margin-bottom: 500px;
+
+  border-bottom: 1px solid $a-border-color;
+}
+
+.tabs__list--mobile {
+  clear: both;
+  overflow: hidden;
+  height: 41px;
+  display: block;
+  padding-left: 15px;
+  padding-top: 3px;
+
+  border-top: 1px solid darken(#ddd, 4%);
+  background-color: darken(#ddd, 3%);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.02);
+}
+
+.tabs__item--mobile {
+  width: 108px;
+
+  font-size: 11px;
+
+  box-shadow: none;
+  background: transparent;
+
+  a {
+    color: darken($a-mobile-secondary-color,6%);
+    text-decoration: none;
+    line-height: 40px;
+  }
+
+  &.active {
+    background: #fff;
+    border: none;
+
+    a {
+      color: $a-mobile-base-color;
+    }
+  }
+}
+
+
+/* Overwritten Styles need to rewrite stat */
+
+.horizontal {
+  margin-bottom: 12px;
+}
+
+.tabbed-list__group--block {
+  width: 115px;
+}
+
+.tabbed-list__image--block {
+  width: 95px;
+  height: auto;
+
+  background: $a-alternate-background-color;
+}
+
+.tabbed-list__title--block {
+  margin-bottom: 2px;
+  font-size: .76rem;
+  line-height: 1.34;
+}

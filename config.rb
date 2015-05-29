@@ -9,6 +9,9 @@
 
 ###
 # Page options, layouts, aliases and proxies
+
+page "/mobile/*", :layout => "mobile"
+
 ###
 
 # Per-page layout changes:

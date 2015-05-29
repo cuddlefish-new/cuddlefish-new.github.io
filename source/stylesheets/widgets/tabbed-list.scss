@@ -10,7 +10,7 @@
 }
 
 .tabbed-list__wrapper {
-  width: calc(100% - 200px);
+  width: calc(100% - 201px);
   float: right;
 }
 
@@ -92,6 +92,13 @@
   }
 }
 
+.tabbed-list__group--block {
+  display: block;
+  float: left;
+  width: 133px;
+  margin: 0;
+}
+
 .tabbed-list__thumbnail {
   clear: both;
   overflow: hidden;
@@ -103,6 +110,22 @@
   width: 113px;
   height: 161px;
   margin: 0 auto;
+}
+
+.tabbed-list__image--block {
+  margin-bottom: 7px;
+}
+
+.tabbed-list__title {
+  display: block;
+  margin-top: 6px;
+
+  color: #0066C0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-decoration: none;
+
 }
 
 .tabbed-list__best-seller-badge {
@@ -218,13 +241,8 @@
   float: left;
 }
 
-.tabbed-list__slat-title {
-  display: block;
+.tabbed-list__title--slat {
   margin-top: 6px;
-
-  color: #0066C0;
-  font-size: 14px;
-  line-height: 1.25;
 }
 
 .tabbed-list__slat-description {
@@ -302,13 +320,12 @@
 .tabbed-list__footer {
   clear: both;
   overflow: hidden;
-
   margin: 0 20px;
-  padding: 10px 30px;
+  padding: 12px 30px;
+
   border: 1px solid $a-border-color;
-  border-bottom: 1px solid rgba(0,0,0,.1);
-  white-space: nowrap;
-  background: lighten($a-offset-background-color,3%);
+  border-bottom-color: darken($a-border-color,3%);
+  background: #fff;
 }
 
 .tabbed-list__footer-breadcrumbs {

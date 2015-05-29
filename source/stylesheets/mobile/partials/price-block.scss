@@ -1,0 +1,33 @@
+@import "globals/variables";
+
+.price-block__price--list {
+  display: inline-block;
+  font-size: $a-mobile-size-mini;
+  color: #666;
+}
+
+/*.price-block__price--marked-down {
+  font-size: .7rem;
+  text-decoration: line-through;
+}*/
+
+
+.price-block__price--buy {
+  display: inline-block;
+
+  color: lighten(#b12704,3%);
+  font-size: .87rem;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.icon--prime {
+  margin-top: 2px;
+  width: 46px;
+  height: 16px;
+  margin-bottom: 0;
+  background-image: url('../../images/mobile/prime.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,28 @@
+---
+title: Tabbed-List MOBILE Exploration
+---
+
+<body>
+  <%= partial "mobile/partials/header--games" %>
+
+  <div class="tabbed-list__wrapper--mobile">
+    <div class="tabs--mobile">
+      <ul class="horizontal tabs__list--mobile">
+        <li class="tabs__item tabs__item--mobile active"><a href="#tab-1">Best Sellers</a></li>
+        <li class="tabs__item tabs__item--mobile"><a href="#tab-2">Indie Titles</a></li>
+        <li class="tabs__item tabs__item--mobile"><a href="#tab-3">PC Best Sellers</a></li>
+      </ul>
+
+      <div id='tab-1' class="tabbed_content--mobile">
+        <span>
+          <div class="tabbed-list__blocks--mobile">
+            <%= partial "partials/tabbed-list--block" %>
+            <%= partial "partials/tabbed-list--block" %>
+            <%= partial "partials/tabbed-list--block" %>
+            <%= partial "partials/tabbed-list--block" %>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>

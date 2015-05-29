@@ -21,18 +21,7 @@ title: Tabbed List Widget Exploration
         <li class="tabs__item"><a href="#tab-1">Best Sellers</a></li>
         <li class="tabs__item"><a href="#tab-2">Indie Titles</a></li>
         <li class="tabs__item"><a href="#tab-3">PC Best Sellers</a></li>
-        <div class="tabbed-list__dropdown-wrapper">
-          <ul class="tabbed-list__dropdown">
-            <li class="tabbed-list__dropdown-target">
-              <span class="tabbed-list__dropdown-target--gray-text">Sort by</span> Best Match <i class="tabbed-list-dropdown-caret--top"></i><i class="tabbed-list__dropdown-caret"></i>
-              <ul>
-                <li>Lowest Price</li>
-                <li>Prime Shipping</li>
-                <li>Highest Rated</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+        <%= partial "partials/dropdown--sort" %>
       </ul>
 
       <div id='tab-1' class="tabbed_content">

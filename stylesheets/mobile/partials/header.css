@@ -1,0 +1,7 @@
+/* Mobile Header */
+/* line 4, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/partials/header.scss */
+.header__image--mobile-games {
+  width: 375px;
+  height: 362px;
+  background-image: url("../../images/mobile/header--games.jpg");
+  background-size: 375px auto; }

@@ -1,7 +1,3 @@
-@import url(plugins/animate.css);
-@import url(plugins/fonts.css);
-@import url(plugins/grid.css);
-@import url(plugins/normalize.css);
 @import url("globals/variables") screen;
 @import url("normalize.css") screen;
 @import url("globals/variables") screen;
@@ -1305,52 +1301,112 @@
   float: right;
   margin-left: 10px; }
 
-/* Pattern Library Homepage CSS */
-/* line 10, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
+/* line 3, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/widgets/tabbed-list.scss */
+.tabbed-list__wrapper--mobile {
+  margin-top: 205px; }
+
+/* line 7, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/widgets/tabbed-list.scss */
+.tabbed_content--mobile {
+  clear: both;
+  overflow: hidden;
+  width: 500px;
+  padding: 0 10px 7px 10px;
+  margin-bottom: 500px;
+  border-bottom: 1px solid #ddd; }
+
+/* line 18, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/widgets/tabbed-list.scss */
+.tabs__list--mobile {
+  clear: both;
+  overflow: hidden;
+  height: 41px;
+  display: block;
+  padding-left: 15px;
+  padding-top: 3px;
+  border-top: 1px solid lightgray;
+  background-color: #d5d5d5;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.02); }
+
+/* line 31, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/widgets/tabbed-list.scss */
+.tabs__item--mobile {
+  width: 108px;
+  font-size: 11px;
+  box-shadow: none;
+  background: transparent; }
+  /* line 39, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/widgets/tabbed-list.scss */
+  .tabs__item--mobile a {
+    color: #575757;
+    text-decoration: none;
+    line-height: 40px; }
+  /* line 45, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/widgets/tabbed-list.scss */
+  .tabs__item--mobile.active {
+    background: #fff;
+    border: none; }
+    /* line 49, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/widgets/tabbed-list.scss */
+    .tabs__item--mobile.active a {
+      color: #111; }
+
+/* Overwritten Styles need to rewrite stat */
+/* line 58, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/widgets/tabbed-list.scss */
+.horizontal {
+  margin-bottom: 12px; }
+
+/* line 62, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/widgets/tabbed-list.scss */
+.tabbed-list__group--block {
+  width: 115px; }
+
+/* line 66, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/widgets/tabbed-list.scss */
+.tabbed-list__image--block {
+  width: 95px;
+  height: auto;
+  background: #f3f3f3; }
+
+/* line 73, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/widgets/tabbed-list.scss */
+.tabbed-list__title--block {
+  margin-bottom: 2px;
+  font-size: .76rem;
+  line-height: 1.34; }
+
+/* Mobile Header */
+/* line 4, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/partials/header.scss */
+.header__image--mobile-games {
+  width: 375px;
+  height: 362px;
+  background-image: url("../../images/mobile/header--games.jpg");
+  background-size: 375px auto; }
+
+/* line 3, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/partials/price-block.scss */
+.price-block__price--list {
+  display: inline-block;
+  font-size: 10px;
+  color: #666; }
+
+/*.price-block__price--marked-down {
+  font-size: .7rem;
+  text-decoration: line-through;
+}*/
+/* line 15, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/partials/price-block.scss */
+.price-block__price--buy {
+  display: inline-block;
+  color: #c02a04;
+  font-size: .87rem;
+  font-weight: 700;
+  line-height: 20px; }
+
+/* line 24, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile/partials/price-block.scss */
+.icon--prime {
+  margin-top: 2px;
+  width: 46px;
+  height: 16px;
+  margin-bottom: 0;
+  background-image: url("../../images/mobile/prime.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+/* line 8, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/mobile.scss */
 body {
+  margin: 0;
+  color: #111;
+  font-size: 100%;
   font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  color: #333; }
-
-/* line 16, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
-*,
-*:after,
-*:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* line 24, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
-a {
-  text-decoration: none; }
-
-/* line 28, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
-a:visited {
-  color: #0066C0; }
-
-/* line 32, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
-.grid {
-  max-width: 1500px;
-  margin: 0 auto;
-  overflow: hidden; }
-
-/* line 38, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
-.jumbotron {
-  border-bottom: 1px solid #eaeaea;
-  min-height: 400px; }
-
-/* line 43, /Users/jannhorvath/personal/cuddlefish-new.github.io/source/stylesheets/all.scss */
-.header--big {
-  padding-top: 160px;
-  font-family: "Open Sans", Arial;
-  font-size: 34px;
-  font-weight: 300;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #fff;
-  background: 0 0;
-  background: -webkit-linear-gradient(-45deg, #1D2B64 0, #F8CDDA 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent; }
+  -webkit-font-smoothing: antialiased; }

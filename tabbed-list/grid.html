@@ -8,7 +8,7 @@
   <!-- Use title if it's in the page YAML frontmatter -->
   <title>Tabbed List Widget Exploration</title>
   
-  <!-- Use title if it's in the page YAML frontmatter -->
+  <!-- Google Webfonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
 
   <!-- JQuery Link -->
@@ -17,13 +17,13 @@
   <!-- Stylesheets & JS -->
   <link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
   <script src="/javascripts/all.js" type="text/javascript"></script>
-
 </head>
-<body class="tabbed-list">
+
+<body class="tabbed-list tabbed-list_grid">
   <body>
   <div class="header__wrapper">
   <div class="header__wrapper-inner-shadow">
-    <div class="header__image--games">
+    <div class="header__image header__image--games">
     </div>
   </div>
 </div>
@@ -41,9 +41,9 @@
 
     <div class='tabs tabs_default'>
       <ul class='horizontal'>
-        <li><a href="#tab-1">Best Sellers</a></li>
-        <li><a href="#tab-2">Indie Titles</a></li>
-        <li><a href="#tab-3">PC Best Sellers</a></li>
+        <li class="tabs__item"><a href="#tab-1">Best Sellers</a></li>
+        <li class="tabs__item"><a href="#tab-2">Indie Titles</a></li>
+        <li class="tabs__item"><a href="#tab-3">PC Best Sellers</a></li>
       </ul>
 
       <div id='tab-1' class="tabbed_content">
@@ -164,8 +164,30 @@
         </span>
       </div>
 
+      <!-- Begin second tab aka slat iteration -->
       <div id='tab-2' class="tabbed_content">
-        <span>Tab 2</span>
+        <span>
+          <div class="tabbed-list__slats">
+            <div class="tabbed-list__slat-group">
+              <img class="tabbed-list__slat-image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
+              <h3>This is the title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </a>
+            </div>
+            <!-- li class="group">
+                <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
+                <h3>This is the title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="meta">August 10, 2011</span></p>
+            </li -->
+            <!-- li class="group">
+              <a href="#">
+                <img class="tabbed-list__image" src="../images/tabbed-list/bioshock.jpg" alt=""/>
+                <h3>This is the title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="meta">August 10, 2011</span></p>
+              </a>
+            </li -->
+          </div>
+        </span>
       </div>
 
       <div id='tab-3' class="tabbed_content">
